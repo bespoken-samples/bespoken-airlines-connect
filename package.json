@@ -1,0 +1,32 @@
+{
+  "name": "connect-tests",
+  "version": "1.0.0",
+  "description": "Tests for Amazon Connect",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "bst test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bespoken-samples/connect-tests.git"
+  },
+  "keywords": [
+    "connect",
+    "ivr",
+    "automation",
+    "testing",
+    "end-to-end"
+  ],
+  "author": "bespoken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bespoken-samples/connect-tests/issues"
+  },
+  "homepage": "https://github.com/bespoken-samples/connect-tests#readme",
+  "dependencies": {
+    "bespoken-tools": "^2.4.94"
+  }
+}
