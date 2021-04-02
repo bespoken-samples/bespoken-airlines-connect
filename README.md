@@ -29,7 +29,7 @@ For each individual test, we can review each step that occurred:
 ![docs/TestResultsDetail.png](docs/TestResultsDetail.png)
 
 Additionally, we have integrated with DataDog, where we can view our test results over time:  
-![docs/DataDog.png](DataDog.png)
+![docs/DataDog.png](docs/DataDog.png)
 
 ## Learn More
 Check out our blog post on the AWS Developer site to learn more about this project:
