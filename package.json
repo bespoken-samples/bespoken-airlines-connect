@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/bespoken-samples/connect-tests#readme",
   "dependencies": {
+    "bespoken-datadog-plugin": "^1.1.0",
     "bespoken-tools": "^2.4.94"
   }
 }

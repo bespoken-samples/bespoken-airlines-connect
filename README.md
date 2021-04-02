@@ -23,7 +23,7 @@ The main output from the tests is an HTML report. It can be found as a part of e
 https://github.com/bespoken-samples/bespoken-airlines-connect/actions/runs/706573143
 
 The report summarizes the results of each test:
-![TestResultsSummary.png](TestResultsSummary.png)
+![docs/TestResultsSummary.png](TestResultsSummary.png)
  
 For each individual test, we can review each step that occurred:
 ![docs/TestResultsDetail.png](TestResultsDetail.png)
