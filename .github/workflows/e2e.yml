@@ -1,6 +1,9 @@
 name: e2e-tests
 
 on:
+  schedule:
+    # Runs our tests at the top of every hour
+    - cron:  '0 * * * *'
   workflow_dispatch:
     inputs:
       e2eScript:
@@ -9,6 +12,7 @@ on:
         default: 'v2'
 
 env:
+  DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
   PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
   VIRTUAL_DEVICE_TOKEN: ${{ secrets.VIRTUAL_DEVICE_TOKEN }}
 jobs:
