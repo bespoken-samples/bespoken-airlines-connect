@@ -23,10 +23,10 @@ The main output from the tests is an HTML report. It can be found as a part of e
 https://github.com/bespoken-samples/bespoken-airlines-connect/actions/runs/706573143
 
 The report summarizes the results of each test:
-![docs/TestResultsSummary.png](TestResultsSummary.png)
+![docs/TestResultsSummary.png](docs/TestResultsSummary.png)
  
 For each individual test, we can review each step that occurred:
-![docs/TestResultsDetail.png](TestResultsDetail.png)
+![docs/TestResultsDetail.png](docs/TestResultsDetail.png)
 
 Additionally, we have integrated with DataDog, where we can view our test results over time:  
 ![docs/DataDog.png](DataDog.png)
