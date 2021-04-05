@@ -7,6 +7,6 @@
     "trace": true,
     "virtualDeviceConfig": {
         "recordCall": true,
-        "repeatOnPhrase": ["can you please repeat that"]
+        "repeatOnPhrase": ["can you please repeat that", "can you say that again"]
     }
 }

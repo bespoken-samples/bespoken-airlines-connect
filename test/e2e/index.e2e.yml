@@ -9,13 +9,15 @@ configuration:
 ---
 - test : Book a flight
 - $DIAL :
-  - prompt : Welcome to the Bespoken Airlines Contact Center
+  - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
 - New flight reservations: 
-  - prompt: New flight reservations
+  - prompt: 
+    - New flight reservations
+    - What city are you departing from
   - set finishOnPhrase: 
-    - What city are you traveling from
-    - what city are you departing from?
+    - what city are you traveling from
+    - what city are you departing from
 - Miami: 
   - set finishOnPhrase: what city are you traveling to
   - set repeatOnPhrase: what city are you departing from
@@ -26,7 +28,7 @@ configuration:
 ---
 - test : Cancel a reservation
 - $DIAL :
-  - prompt : Welcome to the Bespoken Airlines Contact Center
+  - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
 - Cancel a flight: 
   - prompt: Cancellations
@@ -42,7 +44,7 @@ configuration:
 ---
 - test : Cancel a reservation (DTMF)
 - $DIAL :
-  - prompt : Welcome to the Bespoken Airlines Contact Center
+  - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
 - Cancel a flight: 
   - prompt: Cancellations
@@ -58,7 +60,8 @@ configuration:
 ---
 - test : Help
 - $DIAL :
-  - prompt : Welcome to the Bespoken Airlines Contact Center
+  - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
-- Help: 
+- I need help: 
   - prompt: Hang in there and we'll communicate you with an agent
+  - set repeatOnPhrase : in a few words please tell me what you're calling about
