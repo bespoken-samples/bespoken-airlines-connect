@@ -1,14 +1,18 @@
 name: e2e-tests
 
 on:
+  schedule:
+    # Runs our tests at the top of every hour
+    - cron:  '0 * * * *'
   workflow_dispatch:
     inputs:
       e2eScript:
-        description: E2E scripts for connect
+        description: E2E scripts for AWS Connect
         required: true
         default: 'v2'
 
 env:
+  DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
   PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
   VIRTUAL_DEVICE_TOKEN: ${{ secrets.VIRTUAL_DEVICE_TOKEN }}
 jobs:
@@ -17,18 +21,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
       - name: Install Dependencies
         run: npm install 
+      
       - name: Test
         run: npm test
+      
       - name: Archive test results
         uses: actions/upload-artifact@v2
-        with:
-          name: test_output
-          path: test_output
-      - name: Archive test results if they failed
-        uses: actions/upload-artifact@v2
-        if: failure()
+        if: ${{ always() }}
         with:
           name: test_output
           path: test_output

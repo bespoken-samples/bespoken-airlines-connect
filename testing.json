@@ -1,12 +1,13 @@
 {
-    "virtualDeviceToken": "${VIRTUAL_DEVICE_TOKEN}",
+    "filter": "./node_modules/bespoken-datadog-plugin/index.js",
     "locales": "en-US",
-    "type": "e2e",
-    "platform": "phone",
     "phoneNumber": "${PHONE_NUMBER}",
+    "platform": "phone",
     "trace": true,
+    "type": "e2e",
     "virtualDeviceConfig": {
         "recordCall": true,
         "repeatOnPhrase": ["can you please repeat that", "can you say that again"]
-    }
+    },
+    "virtualDeviceToken": "${VIRTUAL_DEVICE_TOKEN}"
 }
