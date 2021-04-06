@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       e2eScript:
-        description: E2E scripts for AWS Connect
+        description: End-to-end test scripts for AWS Connect
         required: true
         default: 'v2'
 
