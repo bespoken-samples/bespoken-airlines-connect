@@ -1,4 +1,4 @@
-name: e2e-tests
+name: End-to-end Tests
 
 on:
   schedule:
@@ -7,12 +7,13 @@ on:
   workflow_dispatch:
     inputs:
       e2eScript:
-        description: E2E scripts for AWS Connect
+        description: End-to-end test scripts for AWS Connect
         required: true
         default: 'v2'
 
 env:
   DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+  DATADOG_CUSTOMER: "Bespoken Airlines Connect"
   PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
   VIRTUAL_DEVICE_TOKEN: ${{ secrets.VIRTUAL_DEVICE_TOKEN }}
 jobs:
