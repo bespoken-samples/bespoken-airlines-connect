@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "bst test "
+    "test": "bst test"
   },
   "repository": {
     "type": "git",
