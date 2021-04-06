@@ -13,6 +13,7 @@ on:
 
 env:
   DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+  DATADOG_CUSTOMER: "Bespoken Airlines Connect"
   PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
   VIRTUAL_DEVICE_TOKEN: ${{ secrets.VIRTUAL_DEVICE_TOKEN }}
 jobs:
