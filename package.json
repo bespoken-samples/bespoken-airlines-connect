@@ -1,7 +1,7 @@
 {
-  "name": "connect-tests",
+  "name": "bespoken-airlines-connect",
   "version": "1.0.0",
-  "description": "Tests for Amazon Connect",
+  "description": "Tests for Amazon Connect-based IVR application",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bespoken-samples/connect-tests.git"
+    "url": "git+https://github.com/bespoken-samples/bespoken-airlines-connect.git"
   },
   "keywords": [
     "connect",
@@ -23,9 +23,9 @@
   "author": "bespoken",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bespoken-samples/connect-tests/issues"
+    "url": "https://github.com/bespoken-samples/bespoken-airlines-connect/issues"
   },
-  "homepage": "https://github.com/bespoken-samples/connect-tests#readme",
+  "homepage": "https://github.com/bespoken-samples/bespoken-airlines-connect#readme",
   "dependencies": {
     "bespoken-datadog-plugin": "^1.1.0",
     "bespoken-tools": "^2.4.94"
