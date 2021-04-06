@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/bespoken-samples/bespoken-airlines-connect#readme",
   "dependencies": {
-    "bespoken-datadog-plugin": "^1.1.0",
+    "bespoken-datadog-plugin": "^1.1.1",
     "bespoken-tools": "^2.4.94"
   }
 }
