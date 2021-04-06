@@ -63,5 +63,5 @@ configuration:
   - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
 - I need help: 
-  - prompt: Hang in there and we'll communicate you with an agent
+  - prompt: Hang in there and I'll connect you with an agent
   - set repeatOnPhrase : in a few words please tell me what you're calling about
