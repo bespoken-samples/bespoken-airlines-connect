@@ -6,14 +6,14 @@ Create a Virtual Device Token following these instructions:
 https://read.bespoken.io/end-to-end/ivr/
 
 Once you have a Virtual Device Token of your own, set it here:  
-https://github.com/bespoken-samples/bespoken-airlines-connect/blob/main/testing.json#L2
+https://github.com/bespoken-samples/bespoken-airlines-connect/blob/main/testing.json#L12
 
 Alternatively, you can set it as a Github secret and then load it as an environment variable:  
 https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow
 
 ## Running The Tests
 To run the tests manually:
-* Go to the [e2e workflow page](https://github.com/bespoken-samples/bespoken-airlines-connect/actions/workflows/e2e.yml)
+* Go to the [e2e workflow page](https://github.com/bespoken-samples/bespoken-airlines-connect/actions/workflows/test.yml)
 * Click "Run Workflow"
 
 That's all there is to it!
