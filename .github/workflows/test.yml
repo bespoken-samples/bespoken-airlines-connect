@@ -1,9 +1,10 @@
 name: End-to-end Tests
 
 on:
-  schedule:
-    # Runs our tests at the top of every hour
-    - cron:  '0 * * * *'
+  # Uncomment the next three lines to run on a schedule
+  # schedule:
+  #  # Runs our tests at the top of every hour
+  #  - cron:  '0 * * * *'
   workflow_dispatch:
     inputs:
       e2eScript:
@@ -12,10 +13,14 @@ on:
         default: 'v2'
 
 env:
-  DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
+  # Replace this with your own DataDog API key for real testing
+  # Directions here: https://gitlab.com/bespoken/bespoken-datadog-plugin#bespoken-datadog-plugin
+  DATADOG_API_KEY: 86f0c743a4f6990f7778b78333e84a9e
   DATADOG_CUSTOMER: "Bespoken Airlines Connect"
   PHONE_NUMBER: ${{ secrets.PHONE_NUMBER }}
-  VIRTUAL_DEVICE_TOKEN: ${{ secrets.VIRTUAL_DEVICE_TOKEN }}
+  # Replace this with your own virtual device for real testing
+  # Directions here: https://read.bespoken.io/end-to-end/getting-started/#overview
+  VIRTUAL_DEVICE_TOKEN: phone-e5787cd7-8fef-4d3a-9847-d2cc2d65f815
 jobs:
   e2e-test:
     runs-on: ubuntu-latest
