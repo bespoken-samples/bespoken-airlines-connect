@@ -26,7 +26,7 @@ configuration:
   - set finishOnPhrase: what city are you traveling to
 
 ---
-- test : Cancel a reservation
+- test : Cancel a reservation (DTMF)
 - $DIAL :
   - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
@@ -42,7 +42,7 @@ configuration:
     - Voilá your booking 6286 is canceled
 
 ---
-- test : Cancel a reservation (DTMF)
+- test : Cancel a reservation
 - $DIAL :
   - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
@@ -63,5 +63,7 @@ configuration:
   - prompt : Welcome to the Bespoken Airlines Contact Center *
   - set finishOnPhrase : in a few words please tell me what you're calling about
 - I need help: 
-  - prompt: Hang in there and I'll connect you with an agent
+  - prompt: 
+    - Hang in there  
+    - I'll connect you with an agent
   - set repeatOnPhrase : in a few words please tell me what you're calling about
