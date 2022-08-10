@@ -22,7 +22,9 @@ configuration:
   - set finishOnPhrase: what city are you traveling to
   - set repeatOnPhrase: what city are you departing from
 - Denver: 
-  - prompt: Thanks your flight from * to * has been booked
+  - prompt: 
+    - thanks 
+    - your flight from * to * has been booked
   - set listeningTimeout: 10
 
 ---

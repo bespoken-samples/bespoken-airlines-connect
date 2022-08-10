@@ -3,6 +3,7 @@
     "locales": "en-US",
     "phoneNumber": "${PHONE_NUMBER}",
     "platform": "phone",
+    "projectId": "8e9e7a74-ca12-4b95-ade6-bf2fc7ee702a",
     "trace": true,
     "type": "e2e",
     "virtualDeviceConfig": {
