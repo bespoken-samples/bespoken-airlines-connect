@@ -23,7 +23,7 @@ configuration:
   - set repeatOnPhrase: what city are you departing from
 - Denver: 
   - prompt: Thanks your flight from * to * has been booked
-  - set finishOnPhrase: what city are you traveling to
+  - set listeningTimeout: 10
 
 ---
 - test : Cancel a reservation (DTMF)
