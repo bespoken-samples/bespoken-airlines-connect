@@ -19,6 +19,7 @@ configuration:
     - what city are you traveling from
     - what city are you departing from
 - Miami: 
+  - prompt: "*"
   - set finishOnPhrase: what city are you traveling to
   - set repeatOnPhrase: what city are you departing from
 - Denver: 
